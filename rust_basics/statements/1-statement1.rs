@@ -30,5 +30,5 @@ fn v_displacement(u: f32, t: f32, a: f32) -> f32
         u * t + 0.5 * a * t * t
     };
 
-    return distance;
+   return distance;
 }
