@@ -5,16 +5,16 @@
 fn main()
 {
     let mut s: String = String::from("hello");
-    concat(&mut s);
+    concat_world(&mut s);
     println!("{}", s);
 }
 
 /**
- * concat - concatenates strings.
+ * concat_world - concatenates strings.
  * @s: pointer to string from lending function.
  */
 
-fn concat(s: &mut String)
+fn concat_world(s: &mut String)
 {
     s.push_str(" world");
 }
