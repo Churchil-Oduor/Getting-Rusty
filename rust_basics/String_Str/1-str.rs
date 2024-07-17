@@ -5,6 +5,6 @@
 
 fn main()
 {
-    let s: &str = "Hello World";
+    let s: &str = "Hello World"; // this is a string literal
     println!("{s}");
 }
