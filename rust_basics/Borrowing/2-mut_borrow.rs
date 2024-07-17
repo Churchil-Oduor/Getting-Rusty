@@ -15,6 +15,6 @@ fn main()
 
 fn modify(ptr: &mut String)
 {
-    ptr.push_str(", World");
+   ptr.push_str(", World");
 }
 
