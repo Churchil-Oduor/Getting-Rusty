@@ -3,6 +3,7 @@
  * Rectangle - structure of the rectangle.
  */
 
+#[derive(Debug)]
 struct Rectangle {
     width: u32, 
     height: u32
@@ -11,6 +12,7 @@ struct Rectangle {
 /**
  * main - entry point.
  */
+
 fn main()
 {
     let rect_1 = Rectangle {
@@ -20,7 +22,8 @@ fn main()
 
     
     let area = rect_area(&rect_1);
-    println!("The area of rectangle: L -> {} and width -> {} is {}", rect_1.height, rect_1.width, area);
+   // println!("The area of rectangle: L -> {} and width -> {} is {}", rect_1.height, rect_1.width, area);
+   println!("{rect_1:?}");
 }
 
 /**
