@@ -38,7 +38,7 @@ impl Rectangle {
         2.0 * ((x1- x2).abs() + (y1 - y2).abs())
     }
 
-    fn translate(&mut self, x:64, y: f64) {
+    fn translate(&mut self, x:f64, y: f64) {
         self.p1.x += x;
         self.p2.x += x;
 
@@ -56,6 +56,19 @@ impl Pair {
 
     fn destroy(self) {
         let Pair(first, second) = self;
-        
+        println!("Destroying Pair {}, {}", first, second);
+
+        //first and second get out of scope and are freed
     }
+}
+
+fn main() {
+
+    let rectangle = Rectangle {
+        p1: Point::origin(),
+        p2: Point::new(4.1, 1.3),
+    };
+
+
+    println!("Rectangle perimeter: {}", rectangle.perimeter());
 }
