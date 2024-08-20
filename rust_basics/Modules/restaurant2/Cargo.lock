@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "calc"
+name = "restaurant2"
 version = "0.1.0"
